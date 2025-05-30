@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Puzzle Game</title>
+  <link rel="stylesheet" href="puzzle.css" />
+</head>
+<body>
+  <h1>Dynamic Image Puzzle Game</h1>
+  <br>
+<label for="difficulty" >Select Difficulty : </label>
+<select id="difficulty">
+  <option value="3">Easy</option>
+  <option value="4">Medium</option>
+  <option value="5">Hard</option>
+</select>
+
+<br><br>
+
+<input type="file" id="imageInput" accept="image/*" />
+<br><br>
+
+<button id="startButton" disabled>Start Game</button>
+
+
+<div id="moveCounter">Moves: 0 & Best Score: -</div>
+
+<div id="puzzle" class="grid"></div>
+
+  <script src="puzzle.js"></script>
+</body>
+</html>
